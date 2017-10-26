@@ -1,5 +1,6 @@
 # Yummy Recipes
 An application that allows users to create, save and share recipes. 
+
 Meeting the need to keep track of awesome food recipes.
 
 # Functions
