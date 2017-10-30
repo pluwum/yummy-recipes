@@ -1,5 +1,6 @@
 /*main {
-    
+text-align: center;
+    margin-left: 150px;    
 }
 */
 /*
@@ -13,31 +14,36 @@ html {
 */
 
 body {
-    background: rgba(96, 204, 136, 0.5) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("images/1200px-Good_Food_Display_-_NCI_Visuals_Online.png");
+    background-image: url("images/food-10.png");
 }
 
-header {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.col-md-8 {
+    margin-top: 15px;
 }
+
+.col-md-4 {
+    margin-top: 28px;
+}
+
 
 h1 {
-    background-color: blue;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 p {
-    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 100px;
+    font-weight: bold;
 }
 
-button {
-    background-color: greenyellow;
+.link {
+    color: #fff;
+    text-decoration: underline;
 }
