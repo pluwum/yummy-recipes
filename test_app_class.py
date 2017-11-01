@@ -1,4 +1,4 @@
-"""Unittests for the User and Recipe classes"""
+"""Unittests for the User, Category and Recipe classes"""
 from unittest import TestCase
 from app_class import Category, Recipe, User
 

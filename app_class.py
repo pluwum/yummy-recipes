@@ -1,4 +1,4 @@
-"""Contains the User and Recipe classes"""
+"""Contains the User, Category, and Recipe classes"""
 
 class User():
     """Handles the registration and logging in of users
