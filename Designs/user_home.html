@@ -15,7 +15,7 @@
             <div class="col-md-6">
                 <h3>Home</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 link">
                 <!-- 'user email address is placeholder text
                     This should be filled dynamically once we've 
                     implemented functionality'-->
@@ -41,33 +41,34 @@
                 <hr/>
             </div>
         </div>
-        <div class="row mt-1">
+        <div class="row mt-1 mb-3">
             <div class="col-md-6">
                 <h5>Categories</h6>
             </div>
             <div class="col-md-6">
-                <button type="submit" class="">Create Category</button>
+                <button type="submit" class="ml-3">Create Category</button>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <p class="mr-2"><a class="" data-toggle="collapse" href="#menuRenameDeleteCategory" 
+        <div class="row">
+        <table class="table table-hover table-light ml-2 mr-0">
+            <tbody>
+              <tr>
+                <td><p class="mr-2"><a class="style-link" data-toggle="collapse" href="#menuRenameDeleteCategory" 
                     aria-expanded="false" aria-controls="menuRenameDeleteCategory">
-                    <span class="plus sign"></span>+</a>
-                Vegetable</p>        
-            </div>
-            <div class="col-md-6">
-                <button type="submit" class="button">View Recipes In This Category</button>
-                <button type="submit" class="button">Add A Recipe To This Category</button>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-md-6">
-                <div class="collapse" id="menuRenameDeleteCategory">
-                    <button type="submit" class="">Rename Category</button>
-                    <button type="submit" class="">Delete Category</button>
-                </div>
-            </div>
+                    <i class="plus sign"></i>+</a>
+                Vegetable</p>
+                    <div class="collapse" id="menuRenameDeleteCategory">
+                        <button type="submit" class="">Rename Category</button>
+                        <button type="submit" class="">Delete Category</button>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <button type="submit" class="button mr-5">View Recipes In This Category</button>
+                    <button type="submit" class="button mr-3">Add A Recipe To This Category</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
