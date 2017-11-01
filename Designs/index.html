@@ -2,26 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/index-style.css">
   <title>The Recipes Store</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Recipes Store</h1>
-        <a href="login_page.html"><button>Log In</button></a>
-        <a href="register_page.html"><button>Sign Up</button></a>
-    </header>
-    <main>
-        <p>
-            The Recipes Store allows you to keep all your recipes in one place. 
-            Share them with friends and family!
-        </p>
-            <a href="register_page.html"><button>Sign Up</button></a>
-        <p>
-            Already using the Recipes Store? <a href="login_page.html">Log In</a>
-        </p>
-    </main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 justify-content-center text-center">
+                <h1>Welcome to the Recipes Store</h1>
+            </div>
+            <div class="col-md-4 justify-content-right text-right">
+                <a href="login_page.html"><button type="submit" class="btn btn-primary">Log In</button></a>
+                <a href="register_page.html"><button type="submit" class="btn btn-success">Sign Up</button></a>
+            </div>
+        </div>
+        <main>
+            <h2 class="text-center">
+                The Recipes Store allows you to keep all your recipes in one place. 
+            </h2>
+            <p class="text-center">Share them with friends and family!</p>
+                <a href="register_page.html">
+                    <button type="submit" class="btn btn-success btn-bottom">Sign Up</button>
+                </a>
+            <p class="text-center">
+                Already using the Recipes Store? <a class="link" href="login_page.html">Log In</a>
+            </p>
+        </main>
+    </div>
 </body>
 </html>

@@ -1,43 +1,47 @@
-/*main {
-    
-}
-*/
-/*
-html { 
-    background: url(images/food-01.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-*/
-
 body {
-    background: rgba(96, 204, 136, 0.5) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url("images/1200px-Good_Food_Display_-_NCI_Visuals_Online.png");
-}
-
-header {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url("images/food-10.png");
 }
 
 h1 {
-    background-color: blue;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 35px;
+    margin-left: 160px;
+}
+
+.btn, .btn-primary, .btn-success {
+    font-weight: bolder;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+.btn-bottom {
+    margin-left: 475px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 70px;
 }
 
 p {
-    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 20px;
 }
 
-button {
-    background-color: greenyellow;
+.link {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
 }

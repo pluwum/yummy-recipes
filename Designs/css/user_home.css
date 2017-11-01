@@ -1,0 +1,26 @@
+body {
+    background-color: #60CC88;
+    color: #fff;
+}
+/*
+.col-md-6 {
+    margin-top: 25px;
+}
+*/
+
+hr {
+    border-top-color: #0a080842;
+}
+
+a {
+    color: #fff;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
