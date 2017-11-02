@@ -31,42 +31,42 @@ class UserTestCase(TestCase):
         self.user.user_db.update({email: password})
         self.assertEqual(self.user.user_db[email], password, msg='Invalid user password')
 
-    class CategoryTestCase(TestCase):
-        """This is an instance of the Test Case class
-        that will be used in testing the Category class
-        in app_class.py"""
-        def setUp(self):
-            self.test_category = Category()
+class CategoryTestCase(TestCase):
+    """This is an instance of the Test Case class
+    that will be used in testing the Category class
+    in app_class.py"""
+    def setUp(self):
+        self.test_category = Category()
 
-        def test_create_recipe_category(self, category):
-            """A method to test the create_recipe_category method
-            in the Category class
-            - category: a recipe category to be entered"""
-            category = "something"
-            self.test_category.create_recipe_category(category)
-            self.assertTrue(category in self.test_category.categories,
-                            msg="category not entered into category list")
+    def test_create_recipe_category(self, category):
+        """A method to test the create_recipe_category method
+        in the Category class
+        - category: a recipe category to be entered"""
+        category = "something"
+        self.test_category.create_recipe_category(category)
+        self.assertTrue(category in self.test_category.categories,
+                        msg="category not entered into category list")
 
-        def test_delete_recipe_category(self, category):
-            """A method to test the delete_recipe_category
-            method in the Recipe class"""
-            category = "something"
-            self.test_category.delete_recipe_category(category)
-            self.assertFalse(category in self.test_category.categories,
-                             msg="Category not deleted")
+    def test_delete_recipe_category(self, category):
+        """A method to test the delete_recipe_category
+        method in the Recipe class"""
+        category = "something"
+        self.test_category.delete_recipe_category(category)
+        self.assertFalse(category in self.test_category.categories,
+                         msg="Category not deleted")
 
-        def test_update_recipe_category(self):
-            """A method to test the update_recipe_category method
-            in the Recipe class"""
-            pass
-
-        def test_view_recipe_category(self):
-            """A method to test the view_recipe_category method
-            in the Recipe class"""
-            pass
-
-    class RecipeTestCase(TestCase):
-        """This is an instance of the Test Case class
-        that will be used in testing the Recipe class
-        in app_class.py"""
+    def test_update_recipe_category(self):
+        """A method to test the update_recipe_category method
+        in the Recipe class"""
         pass
+
+    def test_view_recipe_category(self):
+        """A method to test the view_recipe_category method
+        in the Recipe class"""
+        pass
+
+class RecipeTestCase(TestCase):
+    """This is an instance of the Test Case class
+    that will be used in testing the Recipe class
+    in app_class.py"""
+    pass
