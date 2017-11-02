@@ -45,10 +45,6 @@ table {
     margin-right: 2px;
 }
 
-.style-link {
-    color: #343a40;
-}
-
 button {
     display: inline-block;
     margin: 0 10px 0 0;
@@ -73,5 +69,5 @@ button.press {
 }
 
 button.btn-margin {
-    margin-left: 60px;
+    margin-left: 36px;
 }

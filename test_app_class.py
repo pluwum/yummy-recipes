@@ -1,6 +1,6 @@
-"""Unittests for the User and Recipe classes"""
+"""Unittests for the User, Category and Recipe classes"""
 from unittest import TestCase
-from app_class import Recipe, User
+from app_class import Category, Recipe, User
 
 class UserTestCase(TestCase):
     """This is an instance of the Test Case class
@@ -31,29 +31,42 @@ class UserTestCase(TestCase):
         self.user.user_db.update({email: password})
         self.assertEqual(self.user.user_db[email], password, msg='Invalid user password')
 
-    class RecipeTestCase(TestCase):
+    class CategoryTestCase(TestCase):
         """This is an instance of the Test Case class
-        that will be used in testing the Recipe class
+        that will be used in testing the Category class
         in app_class.py"""
         def setUp(self):
-            self.my_recipe = Recipe()
+            self.test_category = Category()
 
-        def test_create_recipe_category(self):
+        def test_create_recipe_category(self, category):
             """A method to test the create_recipe_category method
-            in the Recipe class"""
-            pass
+            in the Category class
+            - category: a recipe category to be entered"""
+            category = "something"
+            self.test_category.create_recipe_category(category)
+            self.assertTrue(category in self.test_category.categories,
+                            msg="category not entered into category list")
 
-        def test_delete_recipe_category(self):
+        def test_delete_recipe_category(self, category):
             """A method to test the delete_recipe_category
             method in the Recipe class"""
-            pass
+            category = "something"
+            self.test_category.delete_recipe_category(category)
+            self.assertFalse(category in self.test_category.categories,
+                             msg="Category not deleted")
 
         def test_update_recipe_category(self):
             """A method to test the update_recipe_category method
-            in the BucketList class"""
+            in the Recipe class"""
             pass
 
         def test_view_recipe_category(self):
             """A method to test the view_recipe_category method
-            in the BucketList class"""
+            in the Recipe class"""
             pass
+
+    class RecipeTestCase(TestCase):
+        """This is an instance of the Test Case class
+        that will be used in testing the Recipe class
+        in app_class.py"""
+        pass

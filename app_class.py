@@ -1,4 +1,4 @@
-"""Contains the User and Recipe classes"""
+"""Contains the User, Category, and Recipe classes"""
 
 class User():
     """Handles the registration and logging in of users
@@ -37,29 +37,50 @@ class User():
         else:
             return "Are you sure you have an account with us?\n Please try registering."
 
+class Category():
+    """This class contains the methods for interacting with the users'
+    recipe categories"""
+    def __init__(self):
+        self.categories = []
+
+    def create_recipe_category(self, category):
+        """This method creates a recipe category
+        - category: the recipe category to be entered"""
+        if category in self.categories:
+            return "Sorry this category already exists. Do you want to modify it?"
+        else:
+            self.categories.append(category)
+
+    def delete_recipe_category(self, category):
+        """This method deletes a recipe category
+        - category: the recipe category to be entered"""
+        if category in self.categories:
+            del category
+        else:
+            return "The category you're trying to delete does not exist"
+
+    def view_recipe_category(self, category):
+        """This method views a recipe category
+        - category: the recipe category to be entered"""
+        if category in self.categories:
+            return category
+        else:
+            return "The category you're trying to view does not exist. Create category?"
+
+    def update_recipe_category(self, category):
+        """This method updates a recipe category"""
+        if category in self.categories:
+            pass
+        else:
+            return "The category you're trying to view does not exist. Create category?"
+
 class Recipe():
     """This class contains the methods for interacting with the users'
-    Recipes """
+    recipes"""
     def __init__(self):
-        pass
+        self.recipes = []
 
-    def create_recipe_category(self, parameter_list):
-        """This method creates a recipe category"""
-        pass
-
-    def delete_recipe_category(self):
-        """This method deletes a recipe category"""
-        pass
-
-    def view_recipe_category(self, key, recipe_value):
-        """This method views a recipe category"""
-        pass
-
-    def update_recipe_category(self, key, new_key, recipe_value):
-        """This method updates a recipe category"""
-        pass
-
-    def add_recipe(self):
+    def add_recipe(self, recipe, recipe_category):
         """This method adds a recipe to a category"""
         pass
 
