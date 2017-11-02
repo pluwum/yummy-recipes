@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/user_home.css">
+    <link rel="stylesheet" type="text/css" href="css/view_recipe.css">
     <title>View Recipes</title>
 </head>
 <body>
@@ -22,6 +22,8 @@
         </div>
         <div class="row">
             <div class="col-12 mt-1">
+                <!-- Should be dynamically filled depending on what category
+                the user has selected to view-->
                 <h5>Category: Vegetable</h5>
             </div>
         </div>
@@ -35,9 +37,9 @@
                 <h5>Recipe 1</h5>
             </div>
             <div class="col-md-6">
-                <button type="submit" class="mr-3">Rename Recipe</button>
-                <button type="submit" class="mr-3">Delete Recipe</button>
-                <button type="submit" class="mr-3">Create New Recipe</button>
+                <button type="submit" class="press btn-margin">Rename Recipe</button>
+                <button type="submit" class="press">Delete Recipe</button>
+                <button type="submit" class="press">Create New Recipe</button>
             </div>
         </div>
         <div class="row mt-3">
@@ -48,20 +50,18 @@
                         <td>
                             Some ingredient 1
                         </td>
-                        <td class="text-right">
-                            <button type="submit" class="mr-5">Rename Recipe</button>
-                            <button type="submit" class="mr-5">Delete Recipe</button>
-                            <button type="submit" class="mr-5">Create New Recipe</button>
+                        <td class="text-center">
+                            <button type="submit" class="press">Edit Ingredient</button>
+                            <button type="submit" class="press">Delete Ingredient</button>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             Some ingredient 2
                         </td>
-                        <td class="text-right">
-                            <button type="submit" class="mr-5">Rename Recipe</button>
-                            <button type="submit" class="mr-5">Delete Recipe</button>
-                            <button type="submit" class="mr-5">Create New Recipe</button>
+                        <td class="text-center">
+                            <button type="submit" class="press">Edit Ingredient</button>
+                            <button type="submit" class="press">Delete Ingredient</button>
                         </td>
                     </tr>
                 </tbody>
