@@ -42,3 +42,30 @@ table {
 .style-link {
     color: #343a40;
 }
+
+button {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    line-height: 1.8;
+    box-shadow: none;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    border-radius: 0;   
+}
+
+button:focus {
+    outline: none
+}
+
+button.press {
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+}
+
+button.btn-margin {
+    margin-left: 60px;
+}
