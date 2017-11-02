@@ -39,6 +39,12 @@ table {
   background-color: #ececf6;
 }
 
+.table-margin {
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .style-link {
     color: #343a40;
 }
