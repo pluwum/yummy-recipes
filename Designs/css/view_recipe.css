@@ -39,6 +39,12 @@ table {
   background-color: #ececf6;
 }
 
+.table-margin {
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 button {
     display: inline-block;
     margin: 0 10px 0 0;
