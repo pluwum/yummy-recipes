@@ -38,7 +38,7 @@ class CategoryTestCase(TestCase):
     def setUp(self):
         self.test_category = Category()
 
-    def test_create_recipe_category(self, category):
+    def test_create_recipe_category(self):
         """A method to test the create_recipe_category method
         in the Category class
         - category: a recipe category to be entered"""
@@ -47,7 +47,7 @@ class CategoryTestCase(TestCase):
         self.assertTrue(category in self.test_category.categories,
                         msg="category not entered into category list")
 
-    def test_delete_recipe_category(self, category):
+    def test_delete_recipe_category(self):
         """A method to test the delete_recipe_category
         method in the Recipe class"""
         category = "something"
