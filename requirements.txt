@@ -30,7 +30,7 @@ olefile==0.44
 packaging==16.8
 pacman-mirrors==4.2.3
 pew==1.1.0
-Pillow==4.3.0
+Pillow==8.1.1
 pipenv==8.3.1
 ply==3.10
 portend==2.2
