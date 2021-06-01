@@ -57,7 +57,7 @@ six==1.11.0
 team==1.0
 tempora==1.9
 udiskie==1.7.1
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenv-clone==0.2.6
 Werkzeug==0.12.2
