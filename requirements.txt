@@ -49,7 +49,7 @@ python-libtorrent==1.1.4
 python-sane==2.8.3
 pytz==2017.2
 PyYAML==3.12
-reportlab==3.4.0
+reportlab==3.5.55
 repoze.lru==0.7
 requests==2.18.4
 Routes==2.4.1
